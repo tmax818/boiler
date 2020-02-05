@@ -1,9 +1,10 @@
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "react-scripts build",
     "server": "live-server public/",
-    "homepage": "http://www.tylermaxwell.co/boiler",
-    "babel": "babel src/app.js --watch --out-file public/scripts/app.js --presets=react,env",
+    "homepage": "https://www.tylermaxwell.co/boiler",
+    "babel": "babel src/app.js --watch --out-file public/scripts/index.js --presets=react,env",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -15,10 +16,25 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "gh-pages": "^2.2.0",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "^3.3.1"
   },
   "name": "boiler",
   "version": "1.0.0",
   "main": "index.js",
-  "description": ""
+  "description": "",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
