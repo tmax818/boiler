@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mkdir -p public/scripts src
+touch public/scripts/app.js
+touch public/index.html
+touch src/app.js
+cat index.txt > public/index.html
+cat app.txt > src/app.js
+npm init -y
+npm i 
+
